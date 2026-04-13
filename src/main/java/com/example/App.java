@@ -18,6 +18,7 @@ public class App {
         options.addArguments("--disable-dev-shm-usage"); // prevents crashes
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080"); // optional but useful
+        options.setAcceptInsecureCerts(true);
 
         WebDriver driver = new ChromeDriver(options);
 
